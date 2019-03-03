@@ -1,9 +1,17 @@
-# Grav dependencies
+# Grav Specific
+accounts/*
+!accounts/.*
+config/security.yaml
+data/*
+!data/.*
 plugins/*
+!plugins/.*
+themes/*
+!themes/.*
 
 # OS Generated
-.DS_Store
+.DS_Store*
+thumbs.db
+Icon?
 Thumbs.db
-
-# Custom
-_meta
+*.swp
