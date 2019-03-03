@@ -1,0 +1,9 @@
+# Grav dependencies
+plugins/*
+
+# OS Generated
+.DS_Store
+Thumbs.db
+
+# Custom
+_meta
