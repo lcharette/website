@@ -10,7 +10,7 @@ git clone https://github.com/getgrav/grav.git .
 Git clone this repo into `/user`
 ```
 rm -r user
-git clone https://github.com/lcharette/website.git user
+git clone git@github.com:lcharette/website.git user
 ```
 
 Install grav
