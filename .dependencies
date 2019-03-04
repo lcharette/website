@@ -15,10 +15,6 @@ git:
         url: https://github.com/getgrav/grav-plugin-form
         path: user/plugins/form
         branch: master
-    git-sync:
-        url: https://github.com/trilbymedia/grav-plugin-git-sync
-        path: user/plugins/git-sync
-        branch: master
     login:
         url: https://github.com/getgrav/grav-plugin-login
         path: user/plugins/login
@@ -55,10 +51,6 @@ links:
     form:
         src: grav-plugin-form
         path: user/plugins/form
-        scm: github
-    git-sync:
-        src: grav-plugin-git-sync
-        path: user/plugins/git-sync
         scm: github
     login:
         src: grav-plugin-login
