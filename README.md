@@ -22,3 +22,12 @@ When in doubt, clear cache:
 ```
 bin/grav clear-cache
 ```
+
+Permissions :
+```
+sudo chown -R www-data:malou .
+find . -type f | xargs chmod 664
+find ./bin -type f | xargs chmod 775
+find . -type d | xargs chmod 775
+find . -type d | xargs chmod +s
+```
