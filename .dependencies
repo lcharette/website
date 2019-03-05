@@ -15,6 +15,14 @@ git:
         url: https://github.com/getgrav/grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
         branch: master
+    taxonomylist:
+        url: https://github.com/getgrav/grav-plugin-taxonomylist
+        path: user/plugins/taxonomylist
+        branch: master
+    relatedpages:
+        url: https://github.com/getgrav/grav-plugin-relatedpages
+        path: user/plugins/relatedpages
+        branch: master
     quark:
         url: https://github.com/getgrav/grav-theme-quark
         path: user/themes/quark
@@ -35,6 +43,14 @@ links:
     shortcode-core:
         src: grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
+        scm: github
+    taxonomylist:
+        src: grav-plugin-taxonomylist
+        path: user/plugins/taxonomylist
+        scm: github
+    relatedpages:
+        src: grav-plugin-relatedpages
+        path: user/plugins/relatedpages
         scm: github
     quark:
         src: grav-theme-quark

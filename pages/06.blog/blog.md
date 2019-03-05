@@ -8,7 +8,6 @@ content:
         by: date
         dir: desc
     pagination: true
-    url_taxonomy_filters: true
 ---
 
-All kind of ideas and guide on how to use UserFrosting
+All kind of ideas and guides on how to use UserFrosting and other modern development tools.
