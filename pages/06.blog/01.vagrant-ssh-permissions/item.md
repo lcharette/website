@@ -8,9 +8,11 @@ taxonomy:
         - Homestead
 ---
 
-## MacOS Permission alert
-
 With new permission system in MacOS Mojave (10.14), every apps that requires access to your computer must be granted permissions. This is no different when using Vagrant, as some system files outside of Vagrant controls are required, especially when using `nfs` for file access.
+
+===
+
+## MacOS Permission alert
 
 Since Mojave, Vagrant is not able to write to /etc/exports anymore while trying to make a NFS mount. The root user isn't allowed to do that anymore due to System Integrity Protection. Vagrant now ask for your root (sudo) password everytime you bring you machine up. Plus, this nice little windows will popup once you do enter your password.
 
