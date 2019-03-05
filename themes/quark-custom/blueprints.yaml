@@ -1,0 +1,13 @@
+name: Quark Custom
+version: 0.1.0
+description: Custom changed to Quark Theme
+icon: rebel
+author:
+  name: Louis Charette
+  email: charette.louis@gmail.com
+homepage: https://github.com/louis-charette/grav-theme-quark-custom
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/louis-charette/grav-theme-quark-custom/issues
+readme: https://github.com/louis-charette/grav-theme-quark-custom/blob/develop/README.md
+license: MIT

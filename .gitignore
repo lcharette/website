@@ -6,7 +6,7 @@ data/*
 !data/.*
 plugins/*
 !plugins/.*
-themes/*
+themes/quark/
 !themes/.*
 
 # OS Generated
