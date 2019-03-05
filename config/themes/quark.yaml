@@ -1,8 +1,8 @@
 enabled: true
 production-mode: true
 custom_logo:
-  user/pages/images/logo/avatar.png:
+  user/pages/images/avatar.png:
     name: avatar.png
     type: image/png
     size: 38720
-    path: user/pages/images/logo/avatar.png
+    path: user/pages/images/avatar.png
