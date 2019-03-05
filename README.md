@@ -31,3 +31,10 @@ find ./bin -type f | xargs chmod 775
 find . -type d | xargs chmod 775
 find . -type d | xargs chmod +s
 ```
+
+## Admin Plugin
+In development mode, the [Grav admin plugin](https://github.com/getgrav/grav-plugin-admin) can be installed to edit pages :
+
+```
+$ bin/gpm install admin
+```
