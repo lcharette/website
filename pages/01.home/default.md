@@ -3,7 +3,7 @@ title: Home
 ---
 
 [center]
-![](avatar.png)
+![](avatar.png?sizes=150px)
 
 ## Louis Charette
 A Civil Engineer who has a passion for coding. Who knew?
