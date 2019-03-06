@@ -10,11 +10,11 @@ A Civil Engineer who has a passion for coding. Who knew?
 
 
 [columns count=3]
-[[fa icon=fa-twitter /] Twitter](https://twitter.com/LouisCharette?class=btn,btn-lg)
+[<i class="fa fa-twitter"></i> Twitter](https://twitter.com/LouisCharette?class=btn,btn-lg)
 
-[[fa icon=fa-github /] GitHub](https://github.com/lcharette/?class=btn,btn-lg)
+[<i class="fa fa-github"></i> GitHub](https://github.com/lcharette/?class=btn,btn-lg)
 
-[[fa icon=fa-pencil /] Blog](/blog?class=btn,btn-lg)
+[<i class="fa fa-pencil"></i> Blog](/blog?class=btn,btn-lg)
 
 [/columns]
 
