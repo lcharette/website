@@ -3,6 +3,14 @@ git:
         url: https://github.com/getgrav/grav-plugin-error
         path: user/plugins/error
         branch: master
+    grav-ganalytics:
+        url: https://github.com/escopecz/grav-ganalytics
+        path: user/plugins/ganalytics
+        branch: master
+    langswitcher:
+        url: https://github.com/getgrav/grav-plugin-langswitcher
+        path: user/plugins/langswitcher
+        branch: master
     markdown-notices:
         url: https://github.com/getgrav/grav-plugin-markdown-notices
         path: user/plugins/markdown-notices
@@ -23,10 +31,6 @@ git:
         url: https://github.com/getgrav/grav-plugin-relatedpages
         path: user/plugins/relatedpages
         branch: master
-    grav-ganalytics:
-        url: https://github.com/escopecz/grav-ganalytics
-        path: user/plugins/ganalytics
-        branch: master
     quark:
         url: https://github.com/getgrav/grav-theme-quark
         path: user/themes/quark
@@ -35,6 +39,14 @@ links:
     error:
         src: grav-plugin-error
         path: user/plugins/error
+        scm: github
+    grav-ganalytics:
+        src: grav-ganalytics
+        path: user/plugins/ganalytics
+        scm: github
+    langswitcher:
+        src: grav-plugin-langswitcher
+        path: user/plugins/langswitcher
         scm: github
     markdown-notices:
         src: grav-plugin-markdown-notices
@@ -55,10 +67,6 @@ links:
     relatedpages:
         src: grav-plugin-relatedpages
         path: user/plugins/relatedpages
-        scm: github
-    grav-ganalytics:
-        src: grav-ganalytics
-        path: user/plugins/ganalytics
         scm: github
     quark:
         src: grav-theme-quark
