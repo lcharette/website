@@ -5,3 +5,7 @@
     font-size: .9rem;
     font-weight: 700;
 }
+
+.content-item > .e-content {
+    text-align: justify;
+}
