@@ -14,15 +14,13 @@ With new permission system in MacOS Mojave (10.14), every apps that requires acc
 
 ## MacOS Permission alert
 
-Since Mojave, Vagrant is not able to write to /etc/exports anymore while trying to make a NFS mount. The root user isn't allowed to do that anymore due to System Integrity Protection. Vagrant now ask for your root (sudo) password everytime you bring you machine up. Plus, this nice little windows will popup once you do enter your password.
+Since Mojave, Vagrant is not able to write to `/etc/exports` anymore while trying to make a NFS mount. Vagrant can't directly use the root user anymore due to System Integrity Protection. Vagrant now ask for your password (using `sudo`) everytime you bring you machine up. Plus, this nice little windows will popup once you do enter your password.
 
 ![](alert.png)
 
-
-First, to get rid of this popup, you need to give the Terminal, or whatever app you’re using to manage your Vagrant box, the `Full Disk Access` permission from Security & Privacy in System Preferences. In my case (imagine below), I also added Vagrant Manager to the list, as I use this nice little app to visually manage and see which box is currently running.
+First, to get rid of this popup, you need to give the Terminal, or whatever app you’re using to manage your Vagrant box, the `Full Disk Access` permission from _Security & Privacy_ tab in _System Preferences_. In my case (imagine below), I also added [Vagrant Manager](http://vagrantmanager.com) to the list, as I use this nice little app to visually manage and see which box is currently running.
 
 ![](PreferenceSystem.png)
-
 
 ## Asking for password
 
@@ -60,7 +58,7 @@ $ homestead reload
 Password:
 ```
 
-Most solutions suggest editing the `/etc/sudoers` files. I personally prefer creating a new dedicated config file in `/etc/sudoers.d`. Every file in this directory will be automatically appended to the sudoers config.
+Most solutions suggest editing the `/etc/sudoers` files. I personally prefer creating a new dedicated config file in `/etc/sudoers.d`. Every file in this directory will be automatically appended to the _sudoers_ config.
 
 Simply create a new file :
 `sudo nano /etc/sudoers.d/vagrant-syncedfolders`
