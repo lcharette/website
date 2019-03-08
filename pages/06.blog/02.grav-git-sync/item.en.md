@@ -11,6 +11,8 @@ taxonomy:
 
 While creating this blog and working on UserFrosting documentation website, I came across the issue of deploying the live site to their respective production servers (VPS). Since both sites have their source code on GitHub, using a post-receive hook seamed the obvious choice for automated deployment. Unfortunately, there’s no definitive way of handling the hook call on the server. Both sites being built with Grav, I quickly came across the [git-sync plugin](https://github.com/trilbymedia/grav-plugin-git-sync). After some quick testing, I figured out this plugin wasn’t of use to me and a custom hook would be better.
 
+[center]![](01.gitsync-logo.png)[/center]
+
 ## Git-sync issues
 
 First, it requires your GitHub password or token, which give access to your entire GitHub account. While this sensitive information is encrypted by the plugin, it’s still not the most secure option in my opinion, compared to using per repo deployment key. Unfortunately, git-sync doesn’t support [key based authentication yet](https://github.com/trilbymedia/grav-plugin-git-sync/issues/110).

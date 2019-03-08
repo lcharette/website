@@ -11,6 +11,8 @@ taxonomy:
 
 Lors de la création de ce blog et de la mise à jours de la documentation de UserFrosting, je suis tombé sur le problème du déploiement des deux sites sur leurs serveurs de production respectifs (dans ce cas, deux VPS). Étant donné que les deux sites ont leur code source sur GitHub, l’utilisation d’un « post-receive hook » constituait le choix évident pour un déploiement automatisé. Malheureusement, il n’y a pas de méthode définitive pour gérer la requête sur le serveur de production. Les deux sites étant construits avec Grav, je suis rapidement tombé sur le [plug-in git-sync](https://github.com/trilbymedia/grav-plugin-git-sync). Après quelques tests rapides, je me suis rendu compte que ce plugin ne me serait pas utile et qu’une solution personnalisé serait mieux.
 
+[center]![](01.gitsync-logo.png)[/center]
+
 ## Problèmes du plugin Git-Sync
 
 Premièrement, le plugin nécessite le mot de passe ou _token_ d'un compte GitHub, ce qui donne accès à l’ensemble de son profil. Bien que ces informations sensibles soient cryptées par le plug-in, sauvegarder ceci sur le serveur n’est pas toujours l’option la plus sécurisée à mon avis, comparé à l’utilisation d’une clé de déploiement SSH. Malheureusement, git-sync ne supporte pas encore [l’authentification par clé SSH](https://github.com/trilbymedia/grav-plugin-git-sync/issues/110).
