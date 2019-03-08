@@ -1,4 +1,8 @@
 git:
+    anchors:
+        url: https://github.com/getgrav/grav-plugin-anchors
+        path: user/plugins/anchors
+        branch: master
     error:
         url: https://github.com/getgrav/grav-plugin-error
         path: user/plugins/error
@@ -36,6 +40,10 @@ git:
         path: user/themes/quark
         branch: master
 links:
+    anchors:
+        src: grav-plugin-anchors
+        path: user/plugins/anchors
+        scm: github
     error:
         src: grav-plugin-error
         path: user/plugins/error
