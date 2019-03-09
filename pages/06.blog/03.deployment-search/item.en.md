@@ -20,11 +20,11 @@ Basically, what I need is something that will update the files on my productions
 [size=12]Source: <https://github.com/mauris/Deployer>[/size]
 [/center]
 
- This sounds easy, as GitHub provides [Webhooks](https://developer.github.com/webhooks/) to ping the production server. All we need now is a deployment script to have our app automatically deployed on the production server on push. This deployment script, in Grav's case, would simply have to do a `git pull` and `bin/grav clear-cache` operation.
+This sounds easy, as GitHub provides [Webhooks](https://developer.github.com/webhooks/) to ping the production server. All we need now is a deployment script to have our app automatically deployed on the production server on push. This deployment script, in Grav's case, would simply have to do a `git pull` and `bin/grav clear-cache` operation.
 
 [center]![](Deployment1.png)[/center]
 
-The reality is you need an endpoint on your server to receive the hook. Moreover, this endpoint needs to be reachable through a public facing URL. This is where it gets difficult, because there is not a lot of documentation or "all in one" package to handle that.
+The reality is you need an endpoint on our server to receive the hook. Moreover, this endpoint needs to be reachable through a public facing URL. This is where it gets difficult, because there is not a lot of documentation or "all in one" package to handle that.
 
 
 ## Potential candidates
@@ -74,24 +74,28 @@ This only means one thing. **My perception _was_ wrong. It's a two men job, it r
 
 Now that we established that, some of the [potential candidates](#potential-candidates) starts to make sense. Maybe some of them could be useful after all...
 
+
 ### Deployment script : Deployer
 
 This one looks like a non brainer. The [Deployer](https://deployer.org) app is literally _A deployment tool for PHP_.
 
 My first thought when I came across this app was it couldn't handle the automatic hook portion. This is because  Deployer is meant to be run from a deployment machine (aka your computer), not the production server itself. But I don't think it would be too complicated to use make the production server deploy on itself. By doing so, we’ll essentially be running everything on the same machine (unless you have a dedicated deployment server, which is not my case).
 
-Of course, now we can get into an infinite loop : How to do you deploy your deployment script? I think by adding your project specific deployment script to the project _git_ itself, this should be covered. The only thing we need now is for _something_ to trigger the build.
+Of course, now we can get into an infinite loop : How to do you deploy our deployment script? I think by adding your project specific deployment script to the project _git_ itself, this should be covered. The only thing we need now is for _something_ to trigger the build.
+
 
 ### Public facing hook endpoint : Webhook & Travis
 
-This one is a little more complicated. You have [Webhook](https://github.com/adnanh/webhook), a _lightweight configurable tool written in Go, that allows you to easily create HTTP endpoints (hooks) on your server_. On one side, Webhook requires you to install something on your server (not a big deal for a VPS), but, as per their [Readme](https://github.com/adnanh/webhook#configuration), it requires to be manually run and listen to a non standard port. This could be an issue, but nothing that can't be overcome with Apache's Mod_Proxy (since we'll need a dedicated vhost anyway).
+This one is a little more complicated. You have [Webhook](https://github.com/adnanh/webhook), a _lightweight configurable tool written in Go, that allows you to easily create HTTP endpoints (hooks) on your server_. On one side, Webhook requires you to install something on our server (not a big deal for a VPS), but, as per their [Readme](https://github.com/adnanh/webhook#configuration), it requires to be manually run and listen to a non standard port. This could be an issue, but nothing that can't be overcome with Apache's Mod_Proxy (since we'll need a dedicated vhost anyway).
 
-Another way to trigger our Deployer deployment script would be to use Travis CI. Travis does offers some advantages. For example you could only trigger a deployment after a successful build / tests and you wouldn't need Webhook at all, so no dedicated Apache/Nginx Vhost either. On the other hand, Travis would require SSH access to your production server.
+Another way to trigger our Deployer deployment script would be to use **Travis CI**. Travis does offers some advantages. For example you could only trigger a deployment after a successful build / tests and you wouldn't need Webhook at all, so no dedicated Apache/Nginx Vhost either. On the other hand, Travis would require SSH access to our production server.
 
 I think in the end it will depends on the use case. For Grav, there’s no building or testing phases, so we don't typically have Travis setup for a Grav app. For more complex app, for example one created with [UserFrosting](https://www.userfrosting.com), I already have Travis up and running, so adding a deploy build phase could be better, plus I'm sure I won't deploy bad code if a test fails.
 
 But one thing is sure : One or the other, they'll need to work with _Deployer_ to achieve success. So here we have my current plan :
+
 [center]![](Deployment3.png)[/center]
+
 
 ## Conclusion
 
