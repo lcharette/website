@@ -1,10 +1,11 @@
 ---
 title: 'Testing Deployer'
 published: true
-date: '08-03-2019'
+date: '09-03-2019'
 taxonomy:
     tag:
         - Deployment
+        - Deployer
 ---
 
 For the pas couple of days, I've been searching for [a way to automatically deploys two Grav based website](/blog/deployment-search) when sending new commits to GitHub. So far, I determined I would be using [Deployer.org](https://deployer.org) for the actual file copying and other installation operations. Let's dig in in this first attempt to see what Deployer can do and if it will be able to answers my needs.
