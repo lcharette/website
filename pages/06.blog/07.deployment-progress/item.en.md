@@ -148,6 +148,21 @@ Error occurred while executing the hook's command. Please check your logs for mo
 
 [center]![](https://media.giphy.com/media/4SZxcPTtlGAZa/giphy.gif)[/center]
 
-At this point, I think I'll sleep on it for a couple of days. You can see my progress so far and the config I am using on [this Gist](https://gist.github.com/lcharette/91edc141d55918a5c2d9589f83c7dc82)...
+~~At this point, I think I'll sleep on it for a couple of days. You can see my progress so far and the config I am using on [this Gist](https://gist.github.com/lcharette/91edc141d55918a5c2d9589f83c7dc82)...~~
 
-Oh and, [let me know](mailto:hello@bbqsoftwares.com) if you have any ideas I could try.
+~~Oh and, [let me know](mailto:hello@bbqsoftwares.com) if you have any ideas I could try.~~
+
+
+### The Solution...
+
+Literally 5 minutes after pushing this article to GitHub... ~~I had an epiphany~~ I typed the right command by accident (and had to edit this article).
+
+**Running the service as `www-data` didn't worked because the parent directory wasn't writable to this user**.
+
+I was deploying to `/var/www/grav/`, but somehow `/var/www` belongs to `malou:malou`. That's why it (silently) failed. It couldn't create `grav/`. Even when I kept the `grav/` directory and emptied it between test, it was still owned by `malou` from a previous test...
+
+And I actually found the solution by accident. I did a "_last test before I stop working on this for tonight_" test. Deployed using my user (so all files are owned by `malou:www-data` without group write permission), and then change ownership to `www-data:www-data` to see if at least I can get rid of the white page of death. Instead of doing `sudo chown -R www-data:www-data ./*` like I usually do, I used the _long_ way : `sudo chown -R www-data:www-data /var/www/grav`. Boom. Epiphany. Let's try running the service again... And there we are.
+
+Now that `/var/www/grav/` belongs to `www-data:www-data`, the automatic deployment works with the service running as `www-data`. My user won't be able to edit anything, but at this point I don't care. And it's not the point.
+
+I'll write a definitive guide as soon as I tested a bit more this solution and get some sleep, in case it's still a false positive. And this update will actually be a real life test of deployment on git push, so wish me luck. Meanwhile, you can see the working scripts on [this Gist](https://gist.github.com/lcharette/91edc141d55918a5c2d9589f83c7dc82)...
