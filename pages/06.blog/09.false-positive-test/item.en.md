@@ -209,6 +209,9 @@ In the end, I ended up simply reusing the main test (the one that creates the fi
 
 The [final test](https://github.com/userfrosting/UserFrosting/blob/6b3e81f2597fff45f570a59fdf0aff865a142707/app/sprinkles/account/tests/Unit/RegistrationTest.php#L97-L154) now uses `$this->testNormalRegistration();` to recreate the user in both `testValidationWithDuplicateUsername` and `testValidationWithDuplicateEmail`. I also moved the exception assertion to the `@expectedException` annotation for cleaner code.
 
+[notice=tip]**Update**: As Sebastian Bergmann, the guy behind PHPUnit itself, [pointed out to me](https://twitter.com/s_bergmann/status/1114077279355850752), the [Exception annotation are deprecated in PHPUnit 8 and will be removed in 2020 with PHPUnit 9](https://thephp.cc/news/2019/02/help-my-tests-stopped-working#expecting-exceptions). So I’ll revert back to the full assertions in the next commit. I haven’t been aware of this yet because I’m still working with PHPUnit 5 as [I still require PHP 5.6 support](https://media.giphy.com/media/4pMX5rJ4PYAEM/giphy.gif).[/notice]
+
+
 While this doesn't solve the code efficiency issue of resetting the db twice for no reason, it does solve the initial issue of the **false positive tests** by making sure both exception are properly thrown. Looking at the code coverage now confirm all lines of the `validate()` method are now covered.
 
 
