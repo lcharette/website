@@ -7,7 +7,7 @@ published: true
 
 I'm a Civil Engineer from Montréal, Québec who has a passion for coding. While my full-time job has nothing to do with coding, my principal hobby is and has been for almost 15 years now.
 
-Coding wise, I worked on many small projects, learning everything on my own before getting involved with bigger projects. I'm one of the main contributors to the now almost defunct [SimpsonsCity.com](https://simpsonscity.com) and one of the main developers of [UserFrosting](https://www.userfrosting.com/), an open-source user-management framework.
+Coding-wise, I worked on many small projects, learning everything on my own before getting involved with bigger projects. I'm one of the main contributors to the now almost defunct [SimpsonsCity.com](https://simpsonscity.com) and one of the main developers of [UserFrosting](https://www.userfrosting.com/), an open-source user-management framework.
 
 My latest work includes creating UserFrosting's [Internationalization module](https://github.com/userfrosting/i18n), a module crucial to me as a multilingual software developer from Canada where software supporting both official languages, English and French, are common. I also worked UserFrosting's Bakery CLI interface and I'm currently working on brining UserFrosting Code Coverage as close as possible to 100%. <!--See the [projects page](/projects) for a full list of what I've been working on recently.-->
 
