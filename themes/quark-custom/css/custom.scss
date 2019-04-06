@@ -63,3 +63,34 @@
         }
     }
 }
+
+/*
+ * Overwrite theme breadcrumbs
+ */
+#breadcrumbs {
+    // Fix weird top margin
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem;
+
+    // Padding-left is removed on first a and span, making each item not centered. We don't want that on span, only first a. Fix it by forcing saming padding-left as padding right for first span
+    span:first-child {
+        padding: 0 .5rem !important;
+    }
+
+    // Prevent long article title from wrapping
+    span {
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    // Theme replace FA divider for some reson. Revert that
+    i {
+        display: block;
+    }
+    a:not(:first-child)::before,
+    span:not(:first-child)::before {
+        content: '';
+        padding-right: 0;
+    }
+}

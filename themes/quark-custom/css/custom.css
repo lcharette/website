@@ -49,3 +49,31 @@
 .overlay-menu .treemenu li.tree-empty > .toggler {
     display: none;
 }
+
+/*
+ * Overwrite theme breadcrumbs
+ */
+#breadcrumbs {
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#breadcrumbs span:first-child {
+    padding: 0 .5rem !important;
+}
+
+#breadcrumbs span {
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#breadcrumbs i {
+    display: block;
+}
+
+#breadcrumbs a:not(:first-child)::before,
+#breadcrumbs span:not(:first-child)::before {
+    content: '';
+    padding-right: 0;
+}

@@ -3,6 +3,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-anchors
         path: user/plugins/anchors
         branch: master
+    breadcrumbs:
+        url: https://github.com/getgrav/grav-plugin-breadcrumbs
+        path: user/plugins/breadcrumbs
+        branch: develop
     error:
         url: https://github.com/getgrav/grav-plugin-error
         path: user/plugins/error
@@ -56,6 +60,10 @@ links:
         src: grav-plugin-anchors
         path: user/plugins/anchors
         scm: github
+    breadcrumbs:
+        src: grav-plugin-breadcrumbs
+        path: user/plugins/breadcrumbs
+        scm: github
     error:
         src: grav-plugin-error
         path: user/plugins/error
@@ -87,7 +95,7 @@ links:
     simplesearch:
         src: grav-plugin-simplesearch
         path: user/plugins/simplesearch
-        scm: github  
+        scm: github
     shortcode-core:
         src: grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
