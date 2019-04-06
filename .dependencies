@@ -31,6 +31,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-problems
         path: user/plugins/problems
         branch: master
+    simplesearch:
+        url: https://github.com/getgrav/grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        branch: develop
     shortcode-core:
         url: https://github.com/getgrav/grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
@@ -80,6 +84,10 @@ links:
         src: grav-plugin-pagination
         path: user/plugins/pagination
         scm: github
+    simplesearch:
+        src: grav-plugin-simplesearch
+        path: user/plugins/simplesearch
+        scm: github  
     shortcode-core:
         src: grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
