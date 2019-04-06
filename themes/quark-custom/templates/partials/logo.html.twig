@@ -1,1 +1,5 @@
-<a href="{{ home_url }}" class="navbar-brand mr-10">{{ site.title }}</a>
+{% set logo_file = (theme_var('custom_logo')|first).name %}
+<img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
+<a href="{{ home_url }}" class="navbar-brand mr-10">
+    {{ site.title }}
+</a>

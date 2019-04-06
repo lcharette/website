@@ -6,9 +6,3 @@ custom_logo:
     type: image/png
     size: 38720
     path: user/themes/images/logo/avatar.png
-custom_logo_mobile:
-  user/themes/images/logo/avatar.png:
-    name: avatar.png
-    type: image/png
-    size: 38720
-    path: user/themes/images/logo/avatar.png

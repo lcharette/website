@@ -1,0 +1,65 @@
+/* Custom style for site */
+
+// Fix logo so it can sit beside the site name
+#header .logo {
+    img {
+        display: inline;
+        height: 27px;
+        padding-right: 7px;
+    }
+}
+
+// Justify text in articles
+.content-item > .e-content {
+    text-align: justify;
+}
+
+/*
+ * Fix mobile overlap
+ */
+.mobile-container .overlay {
+    margin-top: 4rem; //Below normal header
+
+    // Hide mobile panel since we don't need to show it twice
+    .mobile-logo {
+        display: none;
+    }
+}
+
+// Make the close button same color as hamburger since it's now on a white background
+.mobile-menu .button_container.active {
+    .top,
+    .bottom {
+        background: #3085ee;
+    }
+}
+
+/*
+ * Improve mobile tree view
+ */
+.overlay-menu {
+    .treemenu {
+
+        li {
+            padding: 10px 0; // Make row bigger
+            background: rgba(102,113,137,.25); // Make row darker
+            margin: 0 0 7px; // Add more space between rows
+
+            .toggler {
+                padding-left: 10px;
+            }
+
+            ul {
+                margin: 1rem;
+            }
+
+            a {
+                padding-left: 10px;
+            }
+
+            &.tree-empty > .toggler {
+                display: none; // Hide dot for non tree menu items
+            }
+        }
+    }
+}
