@@ -8,6 +8,9 @@ content:
         by: date
         dir: desc
     pagination: true
+taxonomy:
+    category:
+        - Blog
 ---
 
 Toutes sortes d’idées et de guides sur l’utilisation de UserFrosting et d’autres outils de développement modernes.

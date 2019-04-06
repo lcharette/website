@@ -3,6 +3,8 @@ title: 'The deployment nightmare continues'
 published: true
 date: '17-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - Deployment
         - Webhook

@@ -3,6 +3,8 @@ title: 'Testing Webhook'
 published: true
 date: '11-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - Deployment
         - Webhook

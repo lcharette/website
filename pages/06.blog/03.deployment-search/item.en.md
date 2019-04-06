@@ -3,6 +3,8 @@ title: 'The search for a deployment service'
 published: true
 date: '08-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - GitHub
         - Grav

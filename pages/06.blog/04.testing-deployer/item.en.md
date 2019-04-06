@@ -3,6 +3,8 @@ title: 'Testing Deployer'
 published: true
 date: '09-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - Deployment
         - Deployer

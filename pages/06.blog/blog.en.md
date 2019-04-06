@@ -8,6 +8,9 @@ content:
         by: date
         dir: desc
     pagination: true
+taxonomy:
+    category:
+        - Blog
 ---
 
 All kind of ideas and guides on how to use UserFrosting and other modern development tools.

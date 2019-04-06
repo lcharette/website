@@ -3,6 +3,8 @@ title: 'Synchroniser un site Grav avec GitHub - Pourquoi je n’utilise pas le p
 published: true
 date: '04-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - GitHub
         - Grav

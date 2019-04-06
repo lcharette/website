@@ -3,6 +3,8 @@ title: 'Syncing Grav based site with GitHub - Why am I not using the git-sync pl
 published: true
 date: '04-03-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - GitHub
         - Grav

@@ -3,6 +3,8 @@ title: Why you shouldn't always trust a test
 published: true
 date: '04-04-2019'
 taxonomy:
+    category:
+        - Blog
     tag:
         - Unit Testing
         - Code Coverage
