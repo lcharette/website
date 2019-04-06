@@ -23,6 +23,10 @@ git:
         url: https://github.com/getgrav/grav-plugin-markdown-notices
         path: user/plugins/markdown-notices
         branch: master
+    pagination:
+        url: https://github.com/getgrav/grav-plugin-pagination
+        path: user/plugins/pagination
+        branch: master
     problems:
         url: https://github.com/getgrav/grav-plugin-problems
         path: user/plugins/problems
@@ -59,7 +63,7 @@ links:
     highlight:
         src: grav-plugin-highlight
         path: user/plugins/highlight
-        scm: github 
+        scm: github
     langswitcher:
         src: grav-plugin-langswitcher
         path: user/plugins/langswitcher
@@ -71,6 +75,10 @@ links:
     problems:
         src: grav-plugin-problems
         path: user/plugins/problems
+        scm: github
+    pagination:
+        src: grav-plugin-pagination
+        path: user/plugins/pagination
         scm: github
     shortcode-core:
         src: grav-plugin-shortcode-core
