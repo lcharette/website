@@ -9,6 +9,6 @@ Si vous êtes une de ces personnes qui aime montrer votre support, vous pouvez t
 
 [center]<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Achetez-moi un café', '#46b798', 'A7052ICP');kofiwidget2.draw();</script> [/center]
 
-[Vous pouvez aussi me trouver sur Paypal](https://paypal.me/LouisCharette) ou [me contacter](mailto:hello@bbqsoftwares.com) si vous voulez montrer votre support autrement.
+[Vous pouvez aussi me trouver sur Paypal](https://paypal.me/LouisCharette) ou [me contacter](/contact) si vous voulez montrer votre support autrement.
 
 Une façon gratuite de m'encourager est aussi de partager mon travail et les articles de mon blog ou encore de me laisser un commentaire sur [Twitter](https://twitter.com/LouisCharette) !

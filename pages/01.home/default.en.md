@@ -1,5 +1,7 @@
 ---
 title: Home
+anchors:
+    active: false
 ---
 
 [center]

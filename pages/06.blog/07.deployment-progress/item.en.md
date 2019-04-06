@@ -153,7 +153,7 @@ Error occurred while executing the hook's command. Please check your logs for mo
 
 ~~At this point, I think I'll sleep on it for a couple of days. You can see my progress so far and the config I am using on [this Gist](https://gist.github.com/lcharette/91edc141d55918a5c2d9589f83c7dc82)...~~
 
-~~Oh and, [let me know](mailto:hello@bbqsoftwares.com) if you have any ideas I could try.~~
+~~Oh and, [let me know](/contact) if you have any ideas I could try.~~
 
 
 ### The Solution...
