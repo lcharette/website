@@ -1,6 +1,7 @@
 ---
 title: 'Testing Deployer'
 published: true
+show_breadcrumbs: true
 date: '09-03-2019'
 taxonomy:
     category:

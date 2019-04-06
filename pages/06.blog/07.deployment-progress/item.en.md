@@ -1,6 +1,7 @@
 ---
 title: 'Making (frustrating) progress on automated deployment'
 published: true
+show_breadcrumbs: true
 date: '16-03-2019'
 taxonomy:
     category:

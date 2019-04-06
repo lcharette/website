@@ -1,6 +1,7 @@
 ---
 title: 'The deployment nightmare continues'
 published: true
+show_breadcrumbs: true
 date: '17-03-2019'
 taxonomy:
     category:

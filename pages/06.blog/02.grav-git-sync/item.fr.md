@@ -1,6 +1,7 @@
 ---
 title: 'Synchroniser un site Grav avec GitHub - Pourquoi je n’utilise pas le plugin git-sync'
 published: true
+show_breadcrumbs: true
 date: '04-03-2019'
 taxonomy:
     category:

@@ -1,6 +1,7 @@
 ---
 title: Why you shouldn't always trust a test
 published: true
+show_breadcrumbs: true
 date: '04-04-2019'
 taxonomy:
     category:

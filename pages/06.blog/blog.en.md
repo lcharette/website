@@ -1,5 +1,6 @@
 ---
 title: Blog
+show_breadcrumbs: false
 content:
     items:
         - '@self.children'
