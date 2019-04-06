@@ -11,7 +11,7 @@ enabled: true
 production-mode: true
 grid-size: grid-lg
 header-fixed: true
-header-animated: true
+header-animated: false
 header-dark: false
 header-transparent: false
 sticky-footer: true
