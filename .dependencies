@@ -44,9 +44,9 @@ git:
         path: user/plugins/shortcode-core
         branch: master
     taxonomylist:
-        url: https://github.com/getgrav/grav-plugin-taxonomylist
+        url: https://github.com/lcharette/grav-plugin-taxonomylist
         path: user/plugins/taxonomylist
-        branch: master
+        branch: develop
     relatedpages:
         url: https://github.com/getgrav/grav-plugin-relatedpages
         path: user/plugins/relatedpages
