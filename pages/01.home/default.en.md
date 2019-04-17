@@ -11,8 +11,10 @@ anchors:
 A Civil Engineer who has a passion for coding. Who knew?
 
 
-[columns count=3]
+[columns count=4]
 [<i class="fa fa-twitter"></i> Twitter](https://twitter.com/LouisCharette?class=btn,btn-lg)
+
+[<i class="fa fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/louis-charette-1a4415b3?class=btn,btn-lg)
 
 [<i class="fa fa-github"></i> GitHub](https://github.com/lcharette/?class=btn,btn-lg)
 
