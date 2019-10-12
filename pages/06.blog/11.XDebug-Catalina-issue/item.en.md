@@ -97,6 +97,8 @@ So now the issue is, in order to compile XDebug, we need to either tell the comp
 
 Until this issue is resolved, either on Apple side or XDebug side, not much can be done other than use a VM to run tests locally...
 
+[Let me know if you find a solution to this...](/contact)
+
 
 ### References for later
 - [/usr/include missing on macOS Catalina (with Xcode 11)](https://apple.stackexchange.com/questions/372032/usr-include-missing-on-macos-catalina-with-xcode-11#_=_)
