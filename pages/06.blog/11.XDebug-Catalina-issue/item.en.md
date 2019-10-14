@@ -102,5 +102,8 @@ Until this issue is resolved, either on Apple side or XDebug side, not much can 
 
 
 ### References for later
+- [Can't compile a C program on a Mac after upgrading to Catalina 10.15](https://stackoverflow.com/questions/58278260/cant-compile-a-c-program-on-a-mac-after-upgrading-to-catalina-10-15)
+- [Where are the C headers in MacOS Mojave?](https://stackoverflow.com/a/53171665/445757)
+- [Can't compile C program on a Mac after upgrade to Mojave](https://stackoverflow.com/questions/52509602/cant-compile-c-program-on-a-mac-after-upgrade-to-mojave)
 - [/usr/include missing on macOS Catalina (with Xcode 11)](https://apple.stackexchange.com/questions/372032/usr-include-missing-on-macos-catalina-with-xcode-11#_=_)
 - [Installation of Xdebug on MacOS Catalina 10.15](https://stackoverflow.com/questions/58317736/installation-of-xdebug-on-macos-catalina-10-15)
