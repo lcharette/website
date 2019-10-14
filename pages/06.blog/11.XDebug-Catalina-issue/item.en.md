@@ -97,7 +97,8 @@ So now the issue is, in order to compile XDebug, we need to either tell the comp
 
 Until this issue is resolved, either on Apple side or XDebug side, not much can be done other than use a VM to run tests locally...
 
-[Let me know if you find a solution to this...](/contact)
+
+[size=25]**Update**: [A solution has been found !](/blog/xdebug-catalina)[/size]
 
 
 ### References for later
