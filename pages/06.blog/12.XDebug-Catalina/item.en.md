@@ -2,7 +2,7 @@
 title: Installation of Xdebug on MacOS Catalina 10.15
 published: true
 show_breadcrumbs: true
-date: '11-10-2019'
+date: '14-10-2019'
 taxonomy:
     category:
         - Blog
