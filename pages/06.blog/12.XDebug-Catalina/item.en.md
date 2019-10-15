@@ -90,13 +90,16 @@ We can now configure :
 ./configure --enable-xdebug
 ```
 
-...and run make using our custom SDK location defined as compiler flags :
+...and run make using our custom SDK location defined as compiler flags. I used a variable to store the path to the SDK so it's easier to edit if it changes :
 ```
-make CPPFLAGS='-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php/main -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php/TSRM -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php/Zend -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php/ext -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/php/ext/date/lib'
+SDK_PATH=$(xcrun --show-sdk-path)
+
+make CPPFLAGS="-I${SDK_PATH}/usr/include/php -I${SDK_PATH}/usr/include/php/main -I${SDK_PATH}/usr/include/php/TSRM -I${SDK_PATH}/usr/include/php/Zend -I${SDK_PATH}/usr/include/php/ext -I${SDK_PATH}/usr/include/php/ext/date/lib"
 ```
 
-Might see some warning, just ignore it for now.
+You might see some warning, just ignore it for now.
 
+[notice=tip]The above trick should work for [any PHP extension you want to compile](https://superuser.com/questions/1487126/php-7-3-8-zip-extension-on-macos-catalina-10-15). If you're trying to compile something other than a PHP extension, I recommend having a look at the `Makefile` to see which directory to include in your custom `CPPFLAGS`.[/notice]
 
 ## Enabled support in PHP
 
