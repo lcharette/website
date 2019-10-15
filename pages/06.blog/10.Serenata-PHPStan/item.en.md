@@ -8,6 +8,7 @@ taxonomy:
         - Blog
     tag:
         - PHP IDE
+        - Atom
         - Developer experience
 ---
 

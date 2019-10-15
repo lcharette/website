@@ -33,6 +33,7 @@ You might need to actually open Xcode at this point to finish installation and a
 Finally, make sure the SDK is found. If the path you get differs from the one bellow, you might need to edit the path accordingly later on:
 ```
 $ xcrun --show-sdk-path
+
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 ```
 
