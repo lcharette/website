@@ -107,7 +107,7 @@ Next, we move the executable somewhere safe. I use `/usr/local/php/extensions`.
 
 ```
 sudo mkdir -p /usr/local/php/extensions
-sudo cp /usr/lib/php/extensions/no-debug-non-zts-20180731/xdebug.so /usr/local/php/extensions
+sudo cp $(php-config --extension-dir)/xdebug.so /usr/local/php/extensions
 ```
 
 Then we edit the PHP configuration to enable Xdebug. Simply edit `php.ini`:
