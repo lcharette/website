@@ -97,13 +97,19 @@ SDK_PATH=$(xcrun --show-sdk-path)
 make CPPFLAGS="-I${SDK_PATH}/usr/include/php -I${SDK_PATH}/usr/include/php/main -I${SDK_PATH}/usr/include/php/TSRM -I${SDK_PATH}/usr/include/php/Zend -I${SDK_PATH}/usr/include/php/ext -I${SDK_PATH}/usr/include/php/ext/date/lib"
 ```
 
-You might see some warning, just ignore it for now.
+You might see some warning, just ignore it for now. Finally, we'll need to run :
+
+```
+make install
+```
+
+Again, this command will fail because it can't move the extension to the right place. SIP will prevent it. But no worries, we'll take care of that manually at the next step. `make install` is still required as it will sign the `*.so` file.
 
 [notice=tip]The above trick should work for [any PHP extension you want to compile](https://superuser.com/questions/1487126/php-7-3-8-zip-extension-on-macos-catalina-10-15). If you're trying to compile something other than a PHP extension, I recommend having a look at the `Makefile` to see which directory to include in your custom `CPPFLAGS`.[/notice]
 
 ## Enabled support in PHP
 
-Next, we move the executable somewhere safe. I use `/usr/local/php/extensions`.
+Once `make install` has been run, we can move the executable somewhere safe. I use `/usr/local/php/extensions`.
 
 ```
 sudo mkdir -p /usr/local/php/extensions
