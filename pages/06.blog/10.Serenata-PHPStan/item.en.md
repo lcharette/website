@@ -9,6 +9,7 @@ taxonomy:
     tag:
         - PHP IDE
         - Atom
+        - PHPStan
         - Developer experience
 ---
 
@@ -45,11 +46,12 @@ My first impressions where that PHPStan was missing out on some errors Serenata 
 - [Extension Installer](https://github.com/phpstan/extension-installer) (Dependency for automatically loading other extensions)
 - [PHPStan Strict Rules](https://github.com/thecodingmachine/phpstan-strict-rules)
 - [PHPStan Deprecation Rules](https://github.com/phpstan/phpstan-deprecation-rules)
+- [PHPStan Mockery extension](https://github.com/phpstan/phpstan-mockery)
 
 Theses extensions can be installed with composer, again, globally :
 
 ```
-composer global require phpstan/extension-installer thecodingmachine/phpstan-strict-rules phpstan/phpstan-deprecation-rules
+composer global require phpstan/extension-installer thecodingmachine/phpstan-strict-rules phpstan/phpstan-deprecation-rules phpstan/phpstan-mockery
 ```
 
 
