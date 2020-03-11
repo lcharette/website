@@ -8,7 +8,7 @@ taxonomy:
         - Blog
     tag:
         - PHP IDE
-        - Xdebug
+        - XDebug
         - MacOS Catalina
 ---
 
