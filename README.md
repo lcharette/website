@@ -20,7 +20,7 @@ bin/grav install
 
 When in doubt, clear cache:
 ```
-bin/grav clear-cache
+bin/grav clearcache
 ```
 
 Permissions :
