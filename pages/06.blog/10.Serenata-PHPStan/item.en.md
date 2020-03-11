@@ -27,6 +27,13 @@ So following the recommendation from Serenata's author, I tested [PHPStan](https
 composer global require phpstan/phpstan-shim
 ```
 
+[notice=tip]**Update**: As of [PHPStan 0.12.0](https://github.com/phpstan/phpstan/releases/tag/0.12.0), `phpstan-shim` is not necessary anymore. You can install directly PHPStan :
+
+```
+composer global require phpstan/phpstan
+```
+[/notice]
+
 [notice=note]
 I had to put back the composer global bin dir to my $PATH, as it apparently got wiped out when upgrading to MacOS Catalina:
 
