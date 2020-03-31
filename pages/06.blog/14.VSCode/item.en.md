@@ -52,6 +52,7 @@ For the curious (and in case I have to re-setup everything again in the near fut
 - [php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer) - The necessary PHP CS Fixer integration !
 - [PHP Debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug) - My new best friend : XDebug integration. More on that in a future post !
 - [PHP DocBlocker](https://marketplace.visualstudio.com/items?itemName=neilbrayfield.php-docblocker)
+- [PHP Getters & Setters](https://marketplace.visualstudio.com/items?itemName=phproberto.vscode-php-getters-setters)
 - [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) - I found this way more useful than saving the workspace. One click solution to open one of my projects.
 - [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark) - So I can feel like home, you know…
 - [Git Web Links for VS Code](https://marketplace.visualstudio.com/items?itemName=reduckted.vscode-gitweblinks) - Very useful when sharing code reference while doing support or working with someone. You no longer have to find the line on GitHub, just copy the GitHub link directly from VSCode !
