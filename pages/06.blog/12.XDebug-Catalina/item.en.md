@@ -18,7 +18,7 @@ After figuring out a way around the massive [breaking change introduced by Xcode
 
 Long story short, Apple decided to nuke `/usr/include` in MacOS Catalina, which has been the default location for C header file for ever in UNIX systems. Trying to install through PEAR / PECL will return an error as the compiler will look for necessary headers file in `/usr/include`. So the solution is to compile Xdebug manually, manually specifying the actual location of the header files, which are still provided by Xcode, just at a different location.
 
-[notice=note]**June 28th 2020**: Instructions have been update for the latest xdebug version at this time, aka 2.9.6[/notice]
+<!--[notice=note]**June 28th 2020**: Instructions have been update for the latest xdebug version at this time, aka 2.7.2[/notice]-->
 
 ## Xcode
 
@@ -42,12 +42,12 @@ $ xcrun --show-sdk-path
 ## Manually Compiling Xdebug
 
 ### Getting source
-Let's compile **2.9.6**, getting the source code from git. Alternatively, you can download the source from [Xdebug site](https://xdebug.org/download.php#releases).
+Let's compile **2.7.2**, getting the source code from git. Alternatively, you can download the source from [Xdebug site](https://xdebug.org/download.php#releases).
 
 ```
 git clone https://github.com/xdebug/xdebug.git
 cd xdebug
-git checkout tags/2.9.6
+git checkout tags/2.7.2
 ```
 
 ### phpize
