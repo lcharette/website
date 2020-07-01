@@ -16,6 +16,14 @@ After figuring out a way around the massive [breaking change introduced by Xcode
 
 ===
 
+[notice=note]
+**Update from June 30th 2020:**
+
+After some new investigation while trying to upgrade to a newer version of xdebug, I now believe most of the instructions in this post are not necessary. Before doing anything, you should check if `xdebug.so` already exists in `/usr/lib/php/extensions/no-debug-non-zts-20180731/`, which I believe is there by default (let me know if otherwise). If it does exist, you could skip to the **[Enabled support in PHP](#enabled-support-in-php)** portion of this post.
+
+Note that building xdebug from source code and actually trying to use that version of `xdebug.so` (for example by referencing the built file in `xdebug/module/xdebug.so` after using `make install`) with the build-in PHP should end up in a "code signature" error. As described [here](https://stackoverflow.com/questions/53668236/how-to-compile-and-use-php-extensions-on-mac-os-mojave) and [here](https://superuser.com/a/1536442/1100783), even after signing the binary, MacOS won't allow system binaries to interact with non-system binaries for security reasons. The only real solution to use a custom version of xdebug would be to compile and use you own instance of PHP instead of the build in one.
+[/notice]
+
 Long story short, Apple decided to nuke `/usr/include` in MacOS Catalina, which has been the default location for C header file for ever in UNIX systems. Trying to install through PEAR / PECL will return an error as the compiler will look for necessary headers file in `/usr/include`. So the solution is to compile Xdebug manually, manually specifying the actual location of the header files, which are still provided by Xcode, just at a different location.
 
 <!--[notice=note]**June 28th 2020**: Instructions have been update for the latest xdebug version at this time, aka 2.7.2[/notice]-->
@@ -154,3 +162,6 @@ If the above command returns nothing, then Xdebug is not available on your insta
 - [Missing system headers (/usr/include) on macOS Catalina](https://stackoverflow.com/questions/58232595/missing-system-headers-usr-include-on-macos-catalina)
 - [Installation of Xdebug on MacOS Catalina 10.15](https://stackoverflow.com/questions/58317736/installation-of-xdebug-on-macos-catalina-10-15)
 - [PHP 7.3.8. ZIP extension on MacOS Catalina 10.15](https://superuser.com/questions/1487126/php-7-3-8-zip-extension-on-macos-catalina-10-15)
+- [How to compile and use php extensions on Mac OS Mojave](https://stackoverflow.com/questions/53668236/how-to-compile-and-use-php-extensions-on-mac-os-mojave)
+- [How to get zip extension working in PHP in MacOS 10.15.1?](https://superuser.com/questions/1499342/how-to-get-zip-extension-working-in-php-in-macos-10-15-1)
+- [How to install Xdebug on MacOS 10.15 Catalina (Xcode 11)](https://profilingviewer.com/installing-xdebug-on-catalina.html)
