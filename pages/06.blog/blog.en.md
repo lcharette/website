@@ -14,4 +14,4 @@ taxonomy:
         - Blog
 ---
 
-All kind of ideas and guides on how to use UserFrosting and other modern development tools.
+All kinds of ideas and guides on modern development tools. Every time I manage to particular problems, I like to share it here in case it can help other. Sometimes I sometime also share stuff and setup guide so I can find it later if I need it.
