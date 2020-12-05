@@ -5,7 +5,7 @@ anchors:
 ---
 
 [center]
-![](avatar.png?sizes=150px)
+![](avatar2.png?sizes=150px)
 
 ## Louis Charette
 Un ingénieur civil qui a une passion pour la programmation? Eh oui !

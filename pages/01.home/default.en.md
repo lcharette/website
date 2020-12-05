@@ -5,7 +5,7 @@ anchors:
 ---
 
 [center]
-![](avatar.png?sizes=150px)
+![](avatar2.png?sizes=150px)
 
 ## Louis Charette
 A Civil Engineer who has a passion for coding. Who knew?
