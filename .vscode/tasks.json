@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Launch Docker",
+            "type": "shell",
+            "command": "docker run -d --rm --name=BBQ -p 8080:80 -e DUID=1000 -e DGID=1000 -v \"$(pwd):/var/www/grav/user\" grav:latest",
+            "problemMatcher": [],
+            "group": "build"
+		},
+		{
+            "label": "Stop Docker",
+            "type": "shell",
+            "command": "docker stop BBQ",
+            "problemMatcher": [],
+            "group": "build"
+        }
+    ]
+}
