@@ -17,7 +17,7 @@ With new permission system in MacOS Mojave (10.14), every apps that requires acc
 
 ## MacOS Permission alert
 
-Since Mojave, Vagrant is not able to write to `/etc/exports` anymore while trying to make a NFS mount. Vagrant can't directly use the root user anymore due to System Integrity Protection. Vagrant now ask for your password (using `sudo`) everytime you bring you machine up. Plus, this nice little windows will popup once you do enter your password.
+Since Mojave, Vagrant is not able to write to `/etc/exports` anymore while trying to make a NFS mount. Vagrant can't directly use the root user anymore due to System Integrity Protection. Vagrant now ask for your password (using `sudo`) every time you bring you machine up. Plus, this nice little windows will popup once you do enter your password.
 
 ![](alert.png)
 
