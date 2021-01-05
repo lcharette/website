@@ -1,6 +1,7 @@
 ---
 title: 'Vagrant SSH Permissions'
 published: true
+visible: false
 show_breadcrumbs: true
 date: '02-03-2019'
 taxonomy:

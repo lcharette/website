@@ -1,6 +1,7 @@
 ---
 title: 'The search for a deployment service'
 published: true
+visible: false
 show_breadcrumbs: true
 date: '08-03-2019'
 taxonomy:

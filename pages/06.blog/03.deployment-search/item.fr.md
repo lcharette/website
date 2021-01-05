@@ -1,6 +1,7 @@
 ---
 title: "La recherche d'un service de déploiement"
 published: true
+visible: false
 show_breadcrumbs: true
 date: '08-03-2019'
 taxonomy:

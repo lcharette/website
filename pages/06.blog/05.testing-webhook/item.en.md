@@ -1,6 +1,7 @@
 ---
 title: 'Testing Webhook'
 published: true
+visible: false
 show_breadcrumbs: true
 date: '11-03-2019'
 taxonomy:
