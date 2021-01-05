@@ -76,9 +76,12 @@ Here begin the nightmare. Since my user (`malou`) is trying to modify the files 
 
 Second deployment...
 
-> The command "cd /var/www/webhook/grav && (bin/gpm selfupgrade -f) failed.
->
-> PHP Fatal error:  Uncaught RuntimeException: Opening file for writing failed on error  in /var/www/webhook/grav/vendor/rockettheme/toolbox/File/src/File.php:198  
+```
+The command "cd /var/www/webhook/grav && (bin/gpm selfupgrade -f) failed.
+
+PHP Fatal error:  Uncaught RuntimeException: Opening file for writing failed on error 
+in /var/www/webhook/grav/vendor/rockettheme/toolbox/File/src/File.php:198  
+```
 
 Arg...
 
