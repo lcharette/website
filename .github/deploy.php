@@ -23,11 +23,6 @@ host('bbqsoftwares.com')
     ->stage('prod')
     ->set('deploy_path', '/var/www/bbqsoftwares.com');
 
-host('bbq.test')
-    ->user('vagrant')
-    ->stage('dev')
-    ->set('deploy_path', '/home/vagrant/bbqsoftwares');
-
 // Install grav task
 task('grav:install', function () {
     within('{{deploy_path}}', function () {
