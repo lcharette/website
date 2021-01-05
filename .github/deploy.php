@@ -13,9 +13,6 @@ set('branch', 'master');
 // Will be effective with Deployer 7.0
 // set('current_path', '{{deploy_path}}/user');
 
-// [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true); 
-
 // Writable dirs by web server 
 set('writable_dirs', []);
 set('allow_anonymous_stats', false);
