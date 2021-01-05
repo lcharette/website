@@ -23,7 +23,6 @@ set('allow_anonymous_stats', false);
 // Hosts
 host('bbqsoftwares.com')
     ->user('deploy')
-    ->identityFile('~/.ssh/deploy_rsa')
     ->stage('prod')
     ->set('deploy_path', '/var/www/bbqsoftwares.com');
 
