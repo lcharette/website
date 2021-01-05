@@ -1,5 +1,5 @@
 ---
-title: A New Attempt at Automated Deployment of My Grav Blog
+title: A New Attempt at Automated Deployment of My Grav Blog Using GitHub Actions
 published: true
 show_breadcrumbs: true
 date: '05-01-2021'
