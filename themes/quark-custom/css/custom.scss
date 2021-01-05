@@ -104,7 +104,6 @@
  * Fix for too much content in menu dropdown
  */ 
 .dropmenu ul ul {
-    right: 0; // Align dropdown right
     max-width: 400px; // Set max width
     width: max-content; // Apply width to content
     li a { 
