@@ -76,5 +76,7 @@ I use [sass-autocompile](https://atom.io/packages/sass-autocompile) in Atom. Thi
 
 [notice=warning]If you have issue with this, make sure you use **`node-sass`** and **not** `npm-sass`.[/notice]
 
+[notice=tip]Psst... Using VSCode now? Check out [Easy Sass](https://marketplace.visualstudio.com/items?itemName=spook.easysass) ![/notice]
+
 ## References :
 - [Install npm packages globally without sudo on macOS and Linux](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)

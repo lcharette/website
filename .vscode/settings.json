@@ -1,0 +1,8 @@
+{
+    "easysass.formats": [
+        {
+            "format": "compressed",
+            "extension": ".css"
+        }
+    ]
+}
