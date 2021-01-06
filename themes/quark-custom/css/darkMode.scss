@@ -1,0 +1,110 @@
+/*!
+ * Quark Dark Mode Theme
+ * 
+ * By Louis Charette
+ * Inspired by https://github.com/getgrav/grav-theme-quark/issues/73#issuecomment-514934287
+ */
+body.dark-mode {
+
+    // Variables
+    $background-color: rgb(23, 27, 33);
+    $text-color: rgb(232, 233, 235);
+    $text-accent-color: white;
+    $card-bg-color: black;
+    $border-color: rgb(63, 71, 85);
+    $link-color: rgb(114, 182, 236);
+
+    // Main body background
+    background-color: $background-color;
+
+    // Page wrapper
+    #body-wrapper,
+    #page-wrapper {
+        background-color: $background-color;
+        color: $text-color;
+    }
+
+    // Darker blue for links
+    a {
+        color: $link-color;
+    }
+
+    // Card, header and dropdown have darker background
+    .card,
+    #header,
+    #footer,
+    .dropmenu ul ul {
+        background-color: $card-bg-color !important;
+    }
+
+    // Headers have whiter color
+    h1, h2, h3, h4, h5, h6,
+    #header a {
+        color: $text-accent-color;
+    }
+
+    // Labels are grey
+    .label.label-primary {
+        color: $text-accent-color;
+        background-color: #323232;
+    }
+    .label.label-secondary {
+        color: white;
+        background-color: #999999;
+    }
+
+    // Code blocks have accent dark background
+    .hljs,
+    code {
+        color: $text-color;
+        border: 1px solid $border-color;
+        background: rgb(17, 20, 24) !important;
+    }
+
+    // Buttons style
+    .btn, .button {
+        background: $background-color;
+
+        // Focus/Hover accent are darker
+        &:focus,
+        &:hover {
+            background: $card-bg-color;
+        }
+    }
+
+    // Pagination border is slighly different than the text
+    .pagination li {
+        border-color: #3085ee;
+    }
+
+    // Sidebar menu use darker text color for focus
+    .menu {
+        background: $background-color;
+        color: rgb(165, 169, 175)
+    }
+
+    .menu .menu-item>a:focus, .menu .menu-item>a:hover {
+        background: $card-bg-color;
+    }
+
+    #sidebar ul.related-pages li {
+        border-bottom-color: $border-color;
+    }
+
+    // Form background
+    .form-input, .search-input, [data-grav-field=array] input, [data-grav-field=array] textarea {
+        background: $background-color;
+    }    
+}
+
+// Fix for padding of the switcher element 
+.dark-mode-switcher {
+    padding-left: 5px !important;
+}
+
+// Remove all transition as they don't work well with dark mode switch
+#header,
+.btn,
+.button {
+    transition: none !important;
+}

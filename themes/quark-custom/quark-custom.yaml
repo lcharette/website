@@ -16,6 +16,8 @@ header-dark: false
 header-transparent: false
 sticky-footer: true
 blog-page: '/blog'
+include_fontawesome: true
+dark_mode: true
 spectre:
   exp: false
   icons: false
