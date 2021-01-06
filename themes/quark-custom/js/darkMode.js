@@ -16,9 +16,7 @@ if (currentTheme == "dark" || (currentTheme == null && prefersDarkScheme)) {
     document.body.classList.add("dark-mode");
 }
 
-// Listen for a click on the button 
-btn.addEventListener("click", function () {
-    
+function darkModeSwith() {
     // Toggle the .dark-theme class on each click
     document.body.classList.toggle("dark-mode");
 
@@ -29,4 +27,4 @@ btn.addEventListener("click", function () {
     } else {
         localStorage.setItem("theme", 'light');
     }
-});
+}
