@@ -100,6 +100,25 @@
     }
 }
 
+/** 
+ * Fix for too much content in menu dropdown
+ */ 
+.dropmenu ul ul {
+    max-width: 400px; // Set max width
+    width: max-content; // Apply width to content
+    li a { 
+        white-space: normal; // Allows to-wrap
+    }
+}
+
+/**
+ * Custom style for linkl label in the menu
+ */ 
+.header-link-label {
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
 /**
  * Quark Dark Mode Theme
  * 

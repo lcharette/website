@@ -4,6 +4,8 @@ show_breadcrumbs: false
 content:
     items:
         - '@self.children'
+    filter:
+        type: 'item'
     limit: 10
     order:
         by: date
