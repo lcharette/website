@@ -5,7 +5,6 @@
  * Inspired by https://github.com/getgrav/grav-theme-quark/issues/73#issuecomment-514934287
  */
 body.dark-mode {
-
     // Variables
     $background-color: rgb(23, 27, 33);
     $text-color: rgb(232, 233, 235);
@@ -38,7 +37,12 @@ body.dark-mode {
     }
 
     // Headers have whiter color
-    h1, h2, h3, h4, h5, h6,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
     #header a {
         color: $text-accent-color;
     }
@@ -62,7 +66,8 @@ body.dark-mode {
     }
 
     // Buttons style
-    .btn, .button {
+    .btn,
+    .button {
         background: $background-color;
 
         // Focus/Hover accent are darker
@@ -80,10 +85,11 @@ body.dark-mode {
     // Sidebar menu use darker text color for focus
     .menu {
         background: $background-color;
-        color: rgb(165, 169, 175)
+        color: rgb(165, 169, 175);
     }
 
-    .menu .menu-item>a:focus, .menu .menu-item>a:hover {
+    .menu .menu-item > a:focus,
+    .menu .menu-item > a:hover {
         background: $card-bg-color;
     }
 
@@ -92,12 +98,15 @@ body.dark-mode {
     }
 
     // Form background
-    .form-input, .search-input, [data-grav-field=array] input, [data-grav-field=array] textarea {
+    .form-input,
+    .search-input,
+    [data-grav-field="array"] input,
+    [data-grav-field="array"] textarea {
         background: $background-color;
-    }    
+    }
 }
 
-// Fix for padding of the switcher element 
+// Fix for padding of the switcher element
 .dark-mode-switcher {
     padding-left: 5px !important;
 }

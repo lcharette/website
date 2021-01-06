@@ -46,10 +46,9 @@
  */
 .overlay-menu {
     .treemenu {
-
         li {
             padding: 10px 0; // Make row bigger
-            background: rgba(102,113,137,.25); // Make row darker
+            background: rgba(102, 113, 137, 0.25); // Make row darker
             margin: 0 0 7px; // Add more space between rows
 
             .toggler {
@@ -81,7 +80,7 @@
 
     // Padding-left is removed on first a and span, making each item not centered. We don't want that on span, only first a. Fix it by forcing saming padding-left as padding right for first span
     span:first-child {
-        padding: 0 .5rem !important;
+        padding: 0 0.5rem !important;
     }
 
     // Prevent long article title from wrapping
@@ -97,25 +96,25 @@
     }
     a:not(:first-child)::before,
     span:not(:first-child)::before {
-        content: '';
+        content: "";
         padding-right: 0;
     }
 }
 
 /** 
  * Fix for too much content in menu dropdown
- */ 
+ */
 .dropmenu ul ul {
     max-width: 400px; // Set max width
     width: max-content; // Apply width to content
-    li a { 
+    li a {
         white-space: normal; // Allows to-wrap
     }
 }
 
 /**
  * Custom style for linkl label in the menu
- */ 
+ */
 .header-link-label {
     text-align: center;
     border-top: 1px solid lightgray;
