@@ -17,8 +17,10 @@ After figuring out a way around the massive [breaking change introduced by Xcode
 ===
 
 [notice=note]
-**Update from June 30th 2020:**
+**Update from January 6th 2021:**   
+Using MacOS Big Sur? This solution should work for you too. But since Apple Deprecated PHP in MacOS Big Sur, you should probably [rely on Homebrew now](/blog/phpunit-big-sur#the-solution).
 
+**Update from June 30th 2020:**   
 After some new investigation while trying to upgrade to a newer version of xdebug, I now believe most of the instructions in this post are not necessary. Before doing anything, you should check if `xdebug.so` already exists in `/usr/lib/php/extensions/no-debug-non-zts-20180731/`, which I believe is there by default (let me know if otherwise). If it does exist, you could skip to the **[Enabled support in PHP](#enabled-support-in-php)** portion of this post.
 
 Note that building xdebug from source code and actually trying to use that version of `xdebug.so` (for example by referencing the built file in `xdebug/module/xdebug.so` after using `make install`) with the build-in PHP should end up in a "code signature" error. As described [here](https://stackoverflow.com/questions/53668236/how-to-compile-and-use-php-extensions-on-mac-os-mojave) and [here](https://superuser.com/a/1536442/1100783), even after signing the binary, MacOS won't allow system binaries to interact with non-system binaries for security reasons. The only real solution to use a custom version of xdebug would be to compile and use you own instance of PHP instead of the build in one.

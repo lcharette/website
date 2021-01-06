@@ -103,7 +103,7 @@ Looks fine right? The tests sure are successful.
 
 Let's look at test coverage :
 
-![](Coverage.png)
+![](Coverage.png?link)
 
 See how lines 171 to 173 are not tested ?
 

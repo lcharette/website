@@ -42,7 +42,7 @@ I then came up with the idea of deploying my repository directly into a base Gra
 At least now I have a somewhat functioning Deployer script. It's not perfect, but it works.
 
 Oh and bonus (negative) points for Deployer. While testing my code, I came across this error:
-![](DeployerError.png)
+![](DeployerError.png?link)
 
 The actual error was indeed a missing semicolon on line 53 of my `deployer.php` file. Easy to find right? Error management could be better... (that's what you get for using anonymous function everywhere)
 
@@ -114,7 +114,7 @@ I run the hook again... still a **white page of death**.
 
 Another `ls -la` revels something interesting. While all files are now owned by `malou:www-data`, as they should, they don't have group write permission. Stop the service, run Webhook manually as my user again and confirm the same files do have group write permission. I even tried running the service and using my user as group, with the same result.
 
-[[figure caption="Wehbook service on the left, Webhook run as my user on the right"]![](PermissionsCompare.png)[/figure]](PermissionsCompare.png)
+[figure class="text-center" caption="Wehbook service on the left, Webhook run as my user on the right"]![](PermissionsCompare.png?link)[/figure]
 
 Wait what? There's probably something going on that I don't understand, but it still doesn't make sense. At least it (kind of) explains why I now have this _white page of death_ in my browser. I probably won't help me fix the second deployment issue just yet, but at least I'm close... I think ?
 

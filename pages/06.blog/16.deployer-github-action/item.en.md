@@ -142,7 +142,7 @@ Here it’s important to execute them **after** the `deploy:symlink` task. That 
 
 We can now test that the deploy script works :  `$ dep deploy dev`
 
-![](Image1.png)
+![](Image1.png?link)
 
 
 The last thing to do for the deploy script is to add the production host. The whole process will be done using the `deploy` user which we’ll setup in the next part.
@@ -302,7 +302,7 @@ At this point, we can run the deployment script a first time **from a local comp
 
 Remember, everything here required to be run with *sudo* as my user (malou) doesn’t have permission to write *deploy:www-data* stuff yet. At this point however, the Grav install hasn’t been run on the actual *current* files yet. So let run `dep deploy prod` again to do just that, and not mess too much with permission. We can now inspect the current permission using `ls -la`: 
 
-![](Image2.png)
+![](Image2.png?link)
 
 Some directories are still owned by the `deploy` group because we didn’t change the default permission yet. As a result, the site won’t be accessible just yet (should return a 500 HTTP error). 
 
@@ -314,7 +314,7 @@ Let’s temporary fix all permission manually and make sure the site is accessib
 
 Going back to the site will now result in this error. But that’s fine, because we want to know *what* needs to be writable. 
 
-![](Image3.png)
+![](Image3.png?link)
 
 
 Next step is to install ACL and set the default file and directory permission according to our strategy<sup>[\[3\]][3],[\[4\]][4]</sup> :  
@@ -336,7 +336,7 @@ Next step is to install ACL and set the default file and directory permission ac
 
 At this point, you should be able to access the site without any issue. In case of a 500 error, you can inspect the Nginx logs, which will probably point you to an additional directory or files that requires write permission (which might appends with some plugins). The deploy script (`dep deploy prod`) should also work without any issue when run locally. Listing all permission after any deployment should show you that all files belong to `deploy:www-data`.
 
-![](Image4.png)
+![](Image4.png?link)
 
 [notice=tip]At this point, you can actually stop if you don’t want the site to be automatically deployed with GitHub Actions. You simply need to run Deployer again on your machine whenever you want to deploy your site.[/notice]
 
@@ -388,26 +388,26 @@ First, in the `dep` command I added the path to `.github/deploy.php`. This argum
 
 We can now push those two new files to GitHub project. The file structure will now look like this: 
 
-[center]![](Image5.png)[/center]
+[center]![](Image5.png?link)[/center]
 
 Once pushed, we inspect the result in the Actions tab. Obviously, it will fail as the ssh keys has not been setup yet. The secret key can now be copied over to GitHub. That key is the one generated when we created our *deploy* user. However, while we copied the public key to the server then, now we’ll want the key inside the `~/.ssh/deploy_rsa` file. This key will begin with `-----BEGIN OPENSSH PRIVATE KEY-----` and end with `-----END OPENSSH PRIVATE KEY-----`. 
 
 In your Github Repo, go to “Settings -> secrets” and click “New repository secret”:
 
-![](Image7.png)
+![](Image7.png?link)
 
 Be sure to name the secret `PRIVATE_KEY`, paste your key here and click “Add secret”:
 
-![](Image8.png)
+![](Image8.png?link)
 
 How secret is now set for this repository:
 
-![](Image9.png)
+![](Image9.png?link)
 
 We can now run the job again by pushing new content to the master branch or by using the “Re-run jobs” button. Everything should be green, developing the “Deploy” task will show the output as everything worked fine and the site should work properly !
 
-![](Image10.png) 
-![](Image11.png)
+![](Image10.png?link) 
+![](Image11.png?link)
 
 ## Conclusion
 

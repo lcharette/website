@@ -179,7 +179,7 @@ So it appears the issue is PHPUnit can read the 'testsuites' from the xml config
 
 Having [Xdebug integrated in VSCode](/blog/vscode) is really a powerful tool. Go learn how to use it. I'll wait. Back so soon? Great! 
 
-[center]![](06.xdebug1.png)[/center]
+[center]![](06.xdebug1.png?link)[/center]
 
 From there, I began adding breaking points, and following the code until I got where the tests are actually being executed. I ended up in [`PHPUnit\Framework\TestSuite\run();`](https://github.com/sebastianbergmann/phpunit/blob/57dd96ec2cc428a58404afe9e5331a1dc2547810/src/Framework/TestSuite.php#L527), where the test were supposed to be executed and where not. As you can maybe see in the screenshot above, a simple `if (\count($this) === 0) { return $result; }` is used by PHPUnit to abort in case no tests are found. So then it's a matter of the testsuite not being read correctly, as `$this` which represent my `Unit` testsuite was indeed showing an empty `tests` array in the Xdebug window, as well as a `numTests` of `-1` :
 

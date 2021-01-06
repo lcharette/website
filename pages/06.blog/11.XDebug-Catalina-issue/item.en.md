@@ -97,9 +97,7 @@ So now the issue is, in order to compile XDebug, we need to either tell the comp
 
 Until this issue is resolved, either on Apple side or XDebug side, not much can be done other than use a VM to run tests locally...
 
-
-[size=25]**Update**: [A solution has been found !](/blog/xdebug-catalina)[/size]
-
+[notice=tip][size=18]**Update**: [A solution has been found !](/blog/xdebug-catalina)[/size][/notice]
 
 ### References for later
 - [Can't compile a C program on a Mac after upgrading to Catalina 10.15](https://stackoverflow.com/questions/58278260/cant-compile-a-c-program-on-a-mac-after-upgrading-to-catalina-10-15)

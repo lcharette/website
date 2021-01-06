@@ -46,7 +46,7 @@ This might be different if the new zsh shell is active.
 
 As for the Atom part, I installed [atom-linter-phpstan](https://github.com/AtomLinter/atom-linter-phpstan). This Atom package provides integration with the editor, showing you errors
 
-[![](2-AtomPHPStan.png)](AtomPHPStan.png)
+![](2-AtomPHPStan.png?link)
 
 My first impressions where that PHPStan was missing out on some errors Serenata used to flag. Fortunately, PHPStan provides a simple way to add new rules, called extensions. The following extension are the one I'm currently using :
 
