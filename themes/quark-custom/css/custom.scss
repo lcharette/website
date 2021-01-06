@@ -110,3 +110,11 @@
         white-space: normal; // Allows to-wrap
     }
 }
+
+/**
+ * Custom style for linkl label in the menu
+ */ 
+.header-link-label {
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
