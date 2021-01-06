@@ -27,4 +27,9 @@ function darkModeSwith() {
     } else {
         localStorage.setItem("theme", "light");
     }
+
+    // Close mobile menu
+    document.querySelector('#toggle').classList.remove('active');
+    document.querySelector('#overlay').classList.remove('open');
+    document.body.classList.remove('mobile-nav-open');
 }
