@@ -2,9 +2,6 @@
  * Custom dark mode
  */
 
-// Button switch
-const btn = document.querySelector(".dark-mode-switcher");
-
 // Get user preference
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -16,8 +13,20 @@ if (currentTheme == "dark" || (currentTheme == null && prefersDarkScheme)) {
     document.body.classList.add("dark-mode");
 }
 
-function darkModeSwith() {
-    // Toggle the .dark-theme class on each click
+// Get all elements with switch class
+const switches = document.querySelectorAll(".dark-mode-switcher");
+
+// Apply event function to each element
+for (var i = 0; i < switches.length; i++) {
+    switches[i].addEventListener('click', darkModeSwith);
+}
+
+function darkModeSwith(event) {
+   
+    // Prevent href action
+    event.preventDefault();
+
+    // Toggle the .dark-theme class
     document.body.classList.toggle("dark-mode");
 
     // If the body contains the .dark-theme class...

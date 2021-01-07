@@ -9,7 +9,8 @@ body.dark-mode {
     $background-color: rgb(23, 27, 33);
     $text-color: rgb(232, 233, 235);
     $text-accent-color: white;
-    $card-bg-color: black;
+    $text-darker-color: rgb(165, 169, 175);
+    $card-bg-color: rgb(17, 20, 24);
     $border-color: rgb(63, 71, 85);
     $link-color: rgb(114, 182, 236);
 
@@ -30,10 +31,13 @@ body.dark-mode {
 
     // Card, header and dropdown have darker background
     .card,
-    #header,
     #footer,
     .dropmenu ul ul {
         background-color: $card-bg-color !important;
+    }
+
+    #header {
+        background-color: $background-color !important;
     }
 
     // Headers have whiter color
@@ -50,11 +54,11 @@ body.dark-mode {
     // Labels are grey
     .label.label-primary {
         color: $text-accent-color;
-        background-color: #323232;
+        background-color: $link-color;
     }
     .label.label-secondary {
-        color: white;
-        background-color: #999999;
+        color: $text-color;
+        background-color: $border-color;
     }
 
     // Code blocks have accent dark background
@@ -62,7 +66,7 @@ body.dark-mode {
     code {
         color: $text-color;
         border: 1px solid $border-color;
-        background: rgb(17, 20, 24) !important;
+        background: $card-bg-color !important;
     }
 
     // Buttons style
@@ -79,13 +83,14 @@ body.dark-mode {
 
     // Pagination border is slighly different than the text
     .pagination li {
-        border-color: #3085ee;
+        border-color: $border-color;
+        background: $card-bg-color;
     }
 
     // Sidebar menu use darker text color for focus
     .menu {
         background: $background-color;
-        color: rgb(165, 169, 175);
+        color: $text-darker-color;
     }
 
     .menu .menu-item > a:focus,
@@ -102,7 +107,12 @@ body.dark-mode {
     .search-input,
     [data-grav-field="array"] input,
     [data-grav-field="array"] textarea {
-        background: $background-color;
+        background: $card-bg-color;
+    }
+
+    // Dim images 
+    img {
+        filter: brightness(.85) contrast(1.2);
     }
 }
 
