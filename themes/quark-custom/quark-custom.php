@@ -16,14 +16,12 @@ class QuarkCustom extends Quark
     }
     
     /**
-     * Set needed variables to display the search results.
+     * Add theme assets globally
      *
      * @return void
      */
     public function onTwigSiteVariables()
     {
-        $twig = $this->grav['twig'];
-
         // Add FontAwesome Globally
         if ($this->config->get('theme.include_fontawesome')) {
             $this->grav['assets']->add('theme://css/fontAwesome.css');
