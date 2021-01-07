@@ -110,7 +110,8 @@ body.dark-mode {
         background: $card-bg-color;
     }
 
-    // Dim images 
+    // Dim images & notices
+    .sc-notice,
     img {
         filter: brightness(.85) contrast(1.2);
     }
