@@ -4,3 +4,7 @@ author:
   email: 'charette.louis@gmail.com'
 metadata:
     description: 'My awesome site'
+
+redirects:
+    /donate: '/contact'
+    /fr/donate: '/contact'
