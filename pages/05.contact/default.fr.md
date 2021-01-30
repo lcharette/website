@@ -25,3 +25,7 @@ Le support technique concernant mes projets doivent être posées sur la page Gi
 
 [/columns]
 [/center]
+
+Certaines personnes aiment montrer leur soutien financier aux projets et aux créateurs qu'ils aiment. Mais ne vous inquiétez pas pour moi, car mon vrai travail paie les factures et me tient au chaud durant l'hiver québécois. Si vous insistez pour montrer votre soutien, vous pouvez toujours [me payer un café](https://ko-fi.com/lcharette). C'est toujours apprécié de savoir que ce que je fais compte et cela m'encourage à continuer à partager mes connaissances et ma passion.
+
+[center]<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Achetez-moi un café', '#46b798', 'lcharette');kofiwidget2.draw();</script> [/center]
