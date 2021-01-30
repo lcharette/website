@@ -1,3 +1,15 @@
 assets:
   css_pipeline: true
   js_pipeline: true
+
+cache:
+  enabled: true
+  
+twig:
+  debug: false
+
+errors:
+  display: false
+
+debugger:
+  twig: false
