@@ -224,9 +224,11 @@ That’s pretty much it! As for the result, you can experience it yourself by cl
 - [Create A Dark/Light Mode Switch with CSS Variables][2]
 - [@greensam88 on GitHub][3]
 - [DarkQuark Theme][4]
+- [In the Spotlight: the Principles of Dark UI Design][5]
 
 [1]: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 [2]: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 [3]: https://github.com/getgrav/grav-theme-quark/issues/73#issuecomment-514934287
 [4]: https://github.com/HeavyWolfPL/grav-theme-darkquark
+[5]: https://www.toptal.com/designers/ui/dark-ui-design
 [Codyhouse]: https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables
