@@ -1,16 +1,20 @@
 git:
-    anchors:
-        url: https://github.com/getgrav/grav-plugin-anchors
-        path: user/plugins/anchors
-        branch: master
-    breadcrumbs:
-        url: https://github.com/getgrav/grav-plugin-breadcrumbs
-        path: user/plugins/breadcrumbs
-        branch: develop
+    problems:
+        url: https://github.com/getgrav/grav-plugin-problems
+        path: user/plugins/problems
+        branch: 2.0.3
     error:
         url: https://github.com/getgrav/grav-plugin-error
         path: user/plugins/error
-        branch: master
+        branch: 1.6.2
+    breadcrumbs:
+        url: https://github.com/getgrav/grav-plugin-breadcrumbs
+        path: user/plugins/breadcrumbs
+        branch: 1.5.1    
+    anchors:
+        url: https://github.com/getgrav/grav-plugin-anchors
+        path: user/plugins/anchors
+        branch: 1.5.3
     grav-ganalytics:
         url: https://github.com/escopecz/grav-ganalytics
         path: user/plugins/ganalytics
@@ -18,7 +22,7 @@ git:
     highlight:
         url: https://github.com/getgrav/grav-plugin-highlight
         path: user/plugins/highlight
-        branch: master
+        branch: 1.4.1
     langswitcher:
         url: https://github.com/getgrav/grav-plugin-langswitcher
         path: user/plugins/langswitcher
@@ -31,18 +35,14 @@ git:
         url: https://github.com/getgrav/grav-plugin-pagination
         path: user/plugins/pagination
         branch: master
-    problems:
-        url: https://github.com/getgrav/grav-plugin-problems
-        path: user/plugins/problems
-        branch: master
     simplesearch:
         url: https://github.com/getgrav/grav-plugin-simplesearch
         path: user/plugins/simplesearch
-        branch: develop
+        branch: 1.14.2
     shortcode-core:
         url: https://github.com/getgrav/grav-plugin-shortcode-core
         path: user/plugins/shortcode-core
-        branch: master
+        branch: 4.1.7
     taxonomylist:
         url: https://github.com/lcharette/grav-plugin-taxonomylist
         path: user/plugins/taxonomylist
